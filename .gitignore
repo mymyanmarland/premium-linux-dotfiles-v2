@@ -1,0 +1,4 @@
+*.swp
+*.swo
+.zcompdump*
+.DS_Store

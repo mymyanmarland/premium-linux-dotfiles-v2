@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -u
+ok=0; warn=0
+check(){ if command -v "$1" >/dev/null 2>&1; then printf '  ✓ %s\n' "$1"; ((ok+=1)); else printf '  - %s (optional)\n' "$1"; ((warn+=1)); fi; }
+printf '\033[1;36mPremium Linux Dotfiles Doctor\033[0m\n'
+for cmd in zsh git curl starship python3 node npm; do check "$cmd"; done
+printf '\nZsh: %s\n' "${ZSH_VERSION:-not running}"
+printf 'PATH: %s\n' "$PATH"
+printf '\nReady: %s checks passed, %s optional tools missing.\n' "$ok" "$warn"

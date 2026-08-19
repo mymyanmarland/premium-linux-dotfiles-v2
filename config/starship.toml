@@ -1,0 +1,21 @@
+format = "[╭─](bold cyan)$directory$git_branch$git_status$python$nodejs$cmd_duration$time\\n[╰─➜](bold green)"
+add_newline = false
+[directory]
+style = "bold blue"
+truncation_length = 3
+[git_branch]
+symbol = " "
+style = "bold purple"
+[git_status]
+style = "bold yellow"
+[python]
+symbol = " "
+[nodejs]
+symbol = " "
+[cmd_duration]
+min_time = 1000
+format = "took [$duration](bold yellow)"
+[time]
+disabled = false
+time_format = "%R"
+style = "dimmed white"
