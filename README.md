@@ -162,17 +162,17 @@ API keys, passwords နှင့် secrets များကို `.zshrc` သ�
 ```bash
 chmod 600 ~/.config/dotfiles/secrets
 ```
-```
 
-Save ပြီးနောက် GitHub ကိုတင်ရန်—
+## Contributing / ပါဝင်ကူညီခြင်း
+
+ပြင်ဆင်မှုများ ပြုလုပ်ပြီး GitHub ပေါ်တင်ရန်—
 
 ```bash
-git add README.md
-git commit -m "docs: add Burmese Linux installation guide"
+git add .
+git commit -m "docs: update documentation"
 git push origin main
 ```
 
-ပြီးရင် စစ်ရန်—
+## Repository
 
-```bash
-git status
+- GitHub: <https://github.com/mymyanmarland/premium-linux-dotfiles-v2>
